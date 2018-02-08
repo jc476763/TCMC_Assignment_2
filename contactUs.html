@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript">
+        function submitForm() {
+            alert("Message submitted successfully!!!")
+            
+        }
+    </script>
 </head>
 <body>
 <div id="wrap">
@@ -15,21 +22,63 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="artists.html">Artists</a></li>
-                <li><a href="bulletinBoard.html">Bulletin Board</a></li>
+                <li><a href="musos.html">Musos</a></li>
                 <li><a href="members.html">Members</a></li>
-                <li><a href="newsFeed.html">News Feed</a></li>
                 <li><a href="aboutUs.html">About Us</a></li>
                 <li><a class="current" href="contactUs.html">Contact Us</a></li>
             </ul>
         </div>
+        <div class="container_form">
+            <form id="contact" action="" method="post" onsubmit="return submitForm(this);">
+                <h3 id="contactUs_header" style="text-align: center">Contact Us</h3>
+                <h4>The Townsville Community Music Centre is able to assist you in a variety of ways. Whether you are a musician looking for support to stage an event, a student seeking a teacher, or simply have a music based enquiry... we are here to help!</h4>
+                <h4>If you'd like to contact us, or are looking for more information about what we can offer, please provide your details in the boxes below and we will respond as soon as possible.</h4>
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
 
+                <fieldset>
+                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="formSubmit()">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="contact_right">
+            <h1>Other Contact Details</h1>
+            <br>
+            <br>
+
+            <h3>Phone:</h3>
+            <p>07 4724 2086</p>
+            <br>
+            <h3>Mobile:</h3>
+            <p>0402 255 182</p>
+            <br>
+
+            <h3>Postal Address:</h3>
+            <p>PO Box 1006,</p>
+            <p>Townsville, Qld 4810</p>
+            <br>
+            <h3>Address:</h3>
+            <p>Townsville Civic Theatre,</p>
+            <p>41 Boundary Street</p>
+            <p>Townsville, Qld 4810</p>
+
+        </div>
     </div>
 </div>
 <div id="footer">
     <div id="wrapper">
         <hr>
-        <p id="ft"> &copy; 2017 Rajendra Manandhar(JC476763)</p>
+        <p id="ft"> &copy; 2018 Group 5(JC476763/JC474405)</p>
     </div>
 </div>
 </body>
